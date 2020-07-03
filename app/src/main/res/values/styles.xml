@@ -5,6 +5,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name = "colorButtonNormal">@color/colorNormalKeys</item>
     </style>
+
+    <style name="ActionButtonsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name = "colorButtonNormal">@color/colorActionKeys</item>
+
+    </style>
+
 
 </resources>
