@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/sci_keyboard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="invisible"
+    tools:visibility="invisible">
+
+
+    <Button
+        android:id="@+id/sciC"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:theme="@style/ActionButtons2Theme"
+        android:text="C"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sciSign"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toRightOf="@id/sciC"
+        android:text="\u00b1"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciPercent"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toRightOf="@id/sciSign"
+        android:text="%"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciDiv"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toRightOf="@id/sciPercent"
+        android:text="\u00f7"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci7"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sciC"
+        android:layout_alignLeft="@id/sciC"
+        android:text="7"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci8"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sciC"
+        android:layout_toRightOf="@id/sci7"
+        android:text="8"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci9"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sciC"
+        android:layout_toRightOf="@id/sci8"
+        android:text="9"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciMul"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sciC"
+        android:layout_toRightOf="@id/sci9"
+        android:text="\u00d7"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/sci4"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci7"
+        android:layout_alignLeft="@id/sci7"
+        android:text="4"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci5"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci7"
+        android:layout_toRightOf="@id/sci4"
+        android:text="5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci6"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci7"
+        android:layout_toRightOf="@id/sci5"
+        android:text="6"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciMinus"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci7"
+        android:layout_toRightOf="@id/sci6"
+        android:text="-"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/sci1"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci4"
+        android:layout_alignLeft="@id/sci4"
+        android:text="1"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci2"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci4"
+        android:layout_toRightOf="@id/sci1"
+        android:text="2"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci3"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci4"
+        android:layout_toRightOf="@id/sci2"
+        android:text="3"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciPlus"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci4"
+        android:layout_toRightOf="@id/sci3"
+        android:text="+"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/sci0"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci1"
+        android:layout_alignLeft="@id/sci1"
+        android:text="0"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sci00"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci1"
+        android:layout_alignLeft="@id/sci2"
+        android:text="00"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciDot"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci1"
+        android:layout_toRightOf="@id/sci00"
+        android:text="."
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciEqual"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sci1"
+        android:layout_toRightOf="@id/sciDot"
+        android:text="="
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciMR"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toRightOf="@id/sciDiv"
+        android:text="MR"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sciRoot"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toRightOf="@id/sciMR"
+        android:text="\u221a"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sciMplus"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciMul"
+        android:layout_toRightOf="@id/sciDiv"
+        android:text="M+"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sciXy"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciMplus"
+        android:layout_toRightOf="@id/sciMplus"
+        android:text="Xy"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sciMminus"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciMinus"
+        android:layout_toRightOf="@id/sciMinus"
+        android:text="M-"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/sciPi"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciMminus"
+        android:layout_toRightOf="@id/sciMminus"
+        android:text="\u03c0"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/sciMs"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciPlus"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/sciPlus"
+        android:text="MS"
+        android:textSize="20sp"
+        android:theme="@style/ActionButtonsTheme"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciXm1"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciMs"
+        android:layout_toRightOf="@id/sciMs"
+        android:text="1/X"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/sciDeg"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciEqual"
+        android:layout_toRightOf="@id/sciEqual"
+        android:text="DEG"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/sciRad"
+        tools:ignore="HardcodedText"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/sciDeg"
+        android:layout_toRightOf="@id/sciDeg"
+        android:text="RAD"
+        android:theme="@style/ActionButtonsTheme"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
+
+

@@ -10,7 +10,9 @@
 
     <style name="ActionButtonsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name = "colorButtonNormal">@color/colorActionKeys</item>
-
+    </style>
+    <style name="ActionButtons2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name = "colorButtonNormal">@color/colorAction2Keys</item>
     </style>
 
 

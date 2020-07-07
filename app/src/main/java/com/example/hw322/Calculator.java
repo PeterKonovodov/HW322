@@ -1,12 +1,12 @@
-package com.example.hw32;
+package com.example.hw322;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Calculator {
 
-    Deque<Character> screenData = new ArrayDeque<>();
-    Deque<Double> operands = new ArrayDeque<>();
+    private final Deque<Character> screenData = new ArrayDeque<>();
+    private final Deque<Double> operands = new ArrayDeque<>();
 
     Operation currentOperation = Operation.NOP;
     boolean secondOperandFlag = false;  //признак начала ввода второго операнда. своего рода костыль
@@ -113,8 +113,6 @@ public class Calculator {
                 break;
             case DIV:
                 result = operands.getFirst() / operands.getLast();
-                break;
-            case NOP:
                 break;
             default:
                 break;

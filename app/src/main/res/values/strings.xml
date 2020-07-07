@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">HW32</string>
+    <string name="app_name">HW322</string>
     <string name="whatis">Улучшенный (но не до конца) калькулятор</string>
-    <string name="calcname">Электроника-МК12</string>
+    <string name="sci_type">Инженерный</string>
+    <string name="std_type">Стандартный</string>
+    <string name="calc_type">Вид</string>
 </resources>

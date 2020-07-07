@@ -1,10 +1,12 @@
-package com.example.hw32;
+package com.example.hw322;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,9 +17,12 @@ public class MainActivity extends AppCompatActivity {
             R.id.buttonPercent, R.id.buttonSign, R.id.buttonEqual, R.id.buttonDot};
     final Button[] buttons = new Button[buttonsId.length];
 
-    TextView calcScreen;
+    private TextView calcScreen;
+    private TextView calcTypeTxt;
+    private View standardKeyboard;
+    private View sciKeyboard;
 
-    Calculator calculator = new Calculator();
+    private final Calculator calculator = new Calculator();
 
 
     @Override
@@ -34,8 +39,31 @@ public class MainActivity extends AppCompatActivity {
             buttons[i].setOnClickListener(onClickListener);
         }
         calcScreen = findViewById(R.id.calcScreen);
+        Switch calcTypeSwitch = findViewById(R.id.calc_type_switch);
+        standardKeyboard = findViewById(R.id.std_keyboard);
+        sciKeyboard = findViewById(R.id.sci_keyboard);
+        calcTypeTxt = findViewById(R.id.calc_type_txt);
+
+        calcTypeSwitch.setOnCheckedChangeListener(switchOnChecked);
         calcScreen.setText("0");
     }
+
+    final Switch.OnCheckedChangeListener switchOnChecked = new Switch.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            if(isChecked) {
+                calcTypeTxt.setText(getString(R.string.sci_type));
+                standardKeyboard.setVisibility(View.INVISIBLE);
+                sciKeyboard.setVisibility(View.VISIBLE);
+            }
+            else {
+                calcTypeTxt.setText(getString(R.string.std_type));
+                standardKeyboard.setVisibility(View.VISIBLE);
+                sciKeyboard.setVisibility(View.INVISIBLE);
+            }
+        }
+    };
+
 
     final Button.OnClickListener onClickListener = new Button.OnClickListener() {
         @Override

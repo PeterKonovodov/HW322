@@ -1,4 +1,4 @@
-package com.example.hw32;
+package com.example.hw322;
 
 public enum Operation {
     MUL,

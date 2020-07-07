@@ -6,5 +6,6 @@
     <color name="colorScreenBG">#A6A18F</color>
     <color name="colorScreenText">#000000</color>
     <color name="colorActionKeys">#F67233</color>
+    <color name="colorAction2Keys">#F40606</color>
     <color name="colorNormalKeys">#AEAEAE</color>
 </resources>
